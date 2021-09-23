@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="icon" href="logo.jpg" type="img/jpg">  
+    <title>Laboratory</title>
+    <style>
+       .header{
+           overflow:hidden;
+           background-color: white;
+           padding: 20px 20px;       
+       }
+       .header img {
+           float:left;
+       }
+
+       .header h1 {
+           position:relative;
+           top: 0px;
+           left: 20px;  
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 22px;
+       }
+
+       .header-right{
+           float:right;
+           position: relative;
+           top: -50px;
+       }
+
+       .header a{
+        color:black;      
+        text-decoration:none;
+        padding:12px;
+        line-height:13px;
+        border-radius:04px;
+        font-size: 18px;
+        font-family:Arial, Helvetica, sans-serif;  
+       }
+
+       .header a.active{
+           background-color:rgb(123, 180, 230);
+           color:white;
+       }
+       .header a:hover{
+           background-color:rgb(123, 180, 230);
+           color:black;
+       }
+
+       body{
+           margin: 0px;
+           background-color: aliceblue;
+       }
+
+       p{
+           text-align: center;
+           color: mediumvioletred;
+           font-size: large;
+           font-family: Arial, Helvetica, sans-serif;           
+       }
+
+       table.center{
+           margin-left:auto;
+           margin-right:auto;
+       }
+
+       table{
+           border-collapse:collapse;
+           width:500px;
+           height:250px;
+           border: 2px solid rgb(73, 167, 230);
+           border-radius:8px;
+       }
+
+       th{
+        padding: 12px 25px;
+        background-color: white;
+        color: mediumvioletred;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+       td{
+        padding: 12px 15px;
+        background-color: white;
+        color:mediumvioletred;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+        .footer{
+            padding: 90px;
+            background-color: aliceblue;
+            
+        }
+
+        .footer-left{
+           float:left;
+           position:relative;
+           bottom:80px;
+           left: -20px;
+            
+        }
+
+        .footer-right{
+            float:right;
+            position:relative;
+            bottom:40px;
+            right: 10px;
+            font-size: large;
+        }
+
+        .footer a{
+            color:black;
+            text-decoration:none;
+            line-height: 1px;
+            padding: 6px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer a:hover{
+            color:black;
+            background-color:rgb(123, 180, 230);
+        }
+      
+        
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg" width="90px" height="70px">
+        <h1>DashBoard</h1>
+        
+        <div class="header-right">
+            <a class="active" href="#lab_name">LAB NAME</a>
+            <a href="#logout">LOGOUT</a>
+        </div>
+    </div>
+    <p>Patient Aadhar Card</p> 
+    <p><input type="number" placeholder="Enter Aadhar Number"></p>
+    <p><input type="submit" value="Search"></p>
+    <br>
+
+    <table border="3" class="center">
+        <tr>
+            <th>Test</th>
+            <th>Prescribed by</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Reports</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Test 1</td>
+            <td> Doctor:<input type="text"></td>
+            <td rowspan="2"><input type="date"></td>
+            <td rowspan="2"><input type="text" autocomplete="on" disabled ></td>
+            <td rowspan="2"><form><input type="file" multiple></form><br><a href="#download">Download</a> </td>
+        </tr>
+        <tr>
+            <td>Hospital:<input type="text"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Test 2</td>
+            <td>Doctor:<input type="text"></td>
+            <td rowspan="2"><input type="date"></td>
+            <td rowspan="2"><input type="text" autocomplete="on" disabled ></td>
+            <td rowspan="2"><form><input type="file" multiple></form><br><a href="#download">Download</a> </td>
+        </tr>
+        <tr>
+            <td>Hospital:<input type="text"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Test 3</td>
+            <td>Doctor:<input type="text"></td>
+            <td rowspan="2"><input type="date"></td>
+            <td rowspan="2"><input type="text" autocomplete="on" disabled ></td>
+            <td rowspan="2"><form><input type="file" multiple ></form><br><a href="#download">Download</a> </td>
+
+        </tr>
+        <tr>
+            <td>Hospital:<input type="text"></td>
+        </tr>
+
+    </table>
+    <div>
+        <p><input type="Submit" value="Save"></p>
+    </div>
+
+    <br><br><br>
+    <hr>
+    
+    <div class="footer">
+        <div class="footer-left">
+            <a href="#AboutUs">About Us</a> 
+            <a href="#SignOut">Sign In</a>  
+            <a href="#SignUp">Sign Up</a>   <br><br><br>
+            &#9990; <a href="#180020006789" >180020006789</a><br><br>
+            &#9993; <a href="#wecare@gmail.com">wecare@gmail.com</a>
+        </div>
+        
+        <div class="footer-right">
+            <b><cite>He who has health has Hope ;
+                <br />
+                And he who has Hope has Everything.</cite></b>
+        </div>
+
+   </div>
+
+
+</body>
+</html>
