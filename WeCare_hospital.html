@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg" type="img/jpg">
+    <title>Hospital</title>
+
+   
+    <style>
+
+        .header {
+            overflow:hidden;
+            padding:20px 20px;
+            background-color: white;
+            
+        }
+
+        .header img {
+            float:left;
+        }
+
+        .header h1 {
+            position:relative;
+            top:0px;
+            left:20px;
+            font-size:22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header-right{
+            float:right;
+            position:relative;
+            top:-50px
+
+        }
+
+        .header a{
+            color:black;
+            text-decoration:none;
+            line-height: 13px;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .header a.active{
+            color:white;
+            background-color: rgb(123, 180, 230);
+
+        }
+
+        .header a:hover{
+            color:black;
+            background-color:rgb(123, 180, 230);
+        }
+
+        body {
+            margin:0px;
+            background-color: aliceblue;
+            
+        }
+
+        p {
+            text-align: center;
+            color:mediumvioletred;
+            font-size: large;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        table.center{
+           margin-left:auto;
+           margin-right:auto;
+       }
+
+        table{
+           border-collapse:collapse;
+           width:700px;
+           height:300px;
+           border: 1px solid rgb(73, 167, 230);
+           border-radius:8px;
+        }
+
+       
+
+       td{
+           border:none;
+           padding: 12px 15px;
+           background-color: white;
+           color:mediumvioletred;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+
+       .footer{
+            padding: 90px;
+            background-color: aliceblue;
+            
+        }
+
+        .footer-left{
+           float:left;
+           position:relative;
+           bottom:80px;
+           left: -20px;
+            
+        }
+
+
+        .footer-right{
+            float:right;
+            position:relative;
+            bottom:40px;
+            right: 10px;
+            font-size: large;
+        }
+
+        .footer a{
+            color:black;
+            text-decoration:none;
+            line-height: 1px;
+            padding: 6px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer a:hover{
+            color:black;
+            background-color:rgb(123, 180, 230);
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg" alt="Download-logo" width="90" height="70">
+        <h1>DashBoard</h1>
+
+        <div class="header-right">
+            <a class="active" href="#hospitalName">HOSPITAL NAME</a>
+            <a href="#SignOut">SIGN OUT</a>
+        </div>
+        
+    </div>
+    
+    <p>Patient Aadhar Card</p>
+    <p><input type="number" placeholder="Enter Aadhar Number"></p>
+    <p><input type="submit" value="Search"> <input type="submit" value="Add new record"></p>
+
+    <table  border="5" class="center" >
+        <caption style="text-align:left"><b>Personal Details:</b></caption>
+
+        <tr>
+            <td><input type="text" placeholder="Name"></td>
+            <td> Gender:
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female 
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td><input type="number" placeholder="Age"></td>
+            <td><input type="number" placeholder="Weight"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" placeholder="Bloodgroup"></td>
+            <td><input type="number" placeholder="Height"></td>
+        </tr>
+
+        <tr>
+            <td><input type="Number" placeholder="Contact"></td>
+            <td><input type="Number" placeholder="BP"></td>
+        </tr>
+
+        <tr>
+            <td><input type="email" placeholder="Email"></td>
+            <td><input type="Number" placeholder="Cholestrol"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" placeholder="Address"></td>
+            <td><input type="text" placeholder="Habits"></td>
+        </tr>
+
+    </table>
+
+    <br>
+    <br>
+
+    <table class="center" >
+        <caption style="text-align:left"><b>Diseases:</b></caption>
+        <tr>
+            <td>Name: <input type="text" placeholder="Name" size="60"></td>
+        </tr>
+        <tr>
+            <td>Discovery Date: <input type="date"  ></div></td>
+        </tr>
+        <tr>
+            <td>Organ Affected: <input type="text" placeholder="Organ Affected" size="60"></td>
+        </tr>
+        <tr>
+            <td>Symptoms: <input type="text" placeholder="Symptoms" size="60"></td>
+        </tr>
+        <tr>
+            <td>Prescription: <input type="text" placeholder="Prescription" size="60"></td>
+        </tr>
+        <tr>
+            <td>Test: <input type="text" placeholder="Test" size="30"> , Diagonized By: <input type="text" ></td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <hr>
+
+
+    <div class="footer">
+        <div class="footer-left">
+            <a href="#AboutUs">About Us</a> 
+            <a href="#SignOut">Sign In</a>  
+            <a href="#SignUp">Sign Up</a>   <br><br><br>
+            &#9990; <a href="#180020006789" >180020006789</a><br><br>
+            &#9993; <a href="#wecare@gmail.com">wecare@gmail.com</a>
+        </div>
+
+        
+        <div class="footer-right">
+            <b><cite>He who has health has Hope ;
+                <br />
+                And he who has Hope has Everything.</cite></b>
+        </div>
+
+   </div>
+    
+</body>
+</html>
